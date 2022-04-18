@@ -1,50 +1,5 @@
-/******************************************************************************
-  Example_01_BasicReadings.ino
-
-  Read values of air velocity from the FS3000 sensor, print them to terminal.
-  Prints raw data, m/s and mph.
-  Note, the response time on the sensor is 125ms.
-
-  SparkFun FS3000 Arduino Library
-  Pete Lewis @ SparkFun Electronics
-  Original Creation Date: August 5th, 2021
-  https://github.com/sparkfun/SparkFun_FS3000_Arduino_Library
-
-  Development environment specifics:
-
-  IDE: Arduino 1.8.15
-  Hardware Platform: SparkFun Redboard Qwiic
-  SparkFun Air Velocity Sensor Breakout - FS3000 (Qwicc) Version: 1.0
-
-  Artemis Redboard @ 400KHz (Core v2.1.0) 
-  (note, v2.1.1 has a known issue with clock stretching at 100KHz)  
-
-  Do you like this library? Help support SparkFun. Buy a board!
-
-    SparkFun Air Velocity Sensor Breakout - FS3000 (Qwicc)
-    https://www.sparkfun.com/products/18377
-
-  Hardware Connections:
-  Use a qwiic cable to connect from the Redboard Qwiic to the FS3000 breakout (QWIIC).
-  You can also choose to wire up the connections using the header pins like so:
-
-  ARDUINO --> FS3000
-  SDA (A4) --> SDA
-  SCL (A5) --> SCL
-  3.3V --> 3.3V
-  GND --> GND
-
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-  GNU General Public License for more details.
-
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
-******************************************************************************/
-
 #include <Wire.h>
-#include <SparkFun_FS3000_Arduino_Library.h> //Click here to get the library: http://librarymanager/All#SparkFun_FS3000
+#include <SparkFun_FS3000_Arduino_Library.h>
 
 FS3000 fs;
 
